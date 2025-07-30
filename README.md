@@ -34,8 +34,10 @@ acl_error.log	捕获处理异常的目录及错误信息
 
 acl_debug.log	详细的过程调试信息（目录扫描、SID替换、JSON生成等）
 
-步骤1：获得域用户和组的SID,ConvertTo-SID-PowerShell.
+步骤1：
 -
+获得域用户和组的SID,ConvertTo-SID-PowerShell.
+
 自动读取域组并将其转换为安全标识符（SID）。
 
 1、ConvertTo-SID.ps1
@@ -48,9 +50,10 @@ acl_debug.log	详细的过程调试信息（目录扫描、SID替换、JSON生�
 输出为格式化的 CSV 文件，支持中文字符
 
 
-步骤2，将group_with_sid.csv需要替换的新旧用户或组SID信息填写sid_mapping.csv中。
-自动读取新旧SID将目标目录权限信息进行替换，并输出报告。
+步骤2:
 -
+将group_with_sid.csv需要替换的新旧用户或组SID信息填写sid_mapping.csv中。
+自动读取新旧SID将目标目录权限信息进行替换，并输出报告。
 
 1、replace_sid_v6.6.ps1脚本已分为以下几个模块：
 

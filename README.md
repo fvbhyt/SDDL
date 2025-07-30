@@ -18,7 +18,7 @@ SID 替换脚本（优化版 v6.6）
 
 文件名	作用说明
 -
-replace_SID.ps1	主脚本程序
+replace_sid_vX.X.ps1	主脚本程序
 
 sid_mapping.csv	SID 映射表（包含 OldSID 和 NewSID 两列）
 

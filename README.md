@@ -17,13 +17,21 @@ SID 替换脚本（优化版 v6.6）
 错误与调试日志：保存异常目录及处理详情便于排查。
 -
 文件名	作用说明
+
 replace_acl.ps1	主脚本程序
+
 sid_mapping.csv	SID 映射表（包含 OldSID 和 NewSID 两列）
+
 acl_snapshot_before.csv	替换前的权限快照备份
+
 acl_changes.csv	权限变更记录 CSV（含 ACL_Changed 字段）
+
 acl_changes.json	同上数据的 JSON 格式，适合程序处理
+
 acl_report.txt	脚本运行汇总报告，包括处理时间、记录总数等
+
 acl_error.log	捕获处理异常的目录及错误信息
+
 acl_debug.log	详细的过程调试信息（目录扫描、SID替换、JSON生成等）
 
 步骤1：获得域用户和组的SID,ConvertTo-SID-PowerShell.

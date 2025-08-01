@@ -86,3 +86,9 @@ Windows 系统（支持 Active Directory 的 SID 查询）
 
 权限允许调用 NTAccount.Translate
 
+
+追加脚本：
+-
+Remove-CsvDuplicates.ps1 
+使用PowerShell 5.1 脚本实现 CSV 去重的解决方案，支持按指定列去重或整行去重，并保留首次出现的数据。
+

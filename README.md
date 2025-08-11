@@ -50,8 +50,11 @@ domain\user1,,domain\user2,
 2、SIDMapper_GUI.ps1
 它一个基于 PowerShell 的图形界面工具，用于批量查询域用户或组的 SID，并将结果自动填入原始 CSV 表格中。
 查询模式选择：支持三种模式
+
 Olduser：仅查询旧用户 SID 并填入 OldSID
+
 Newuser：仅查询新用户 SID 并填入 NewSID
+
 all：同时查询两列并填入对应 SID
 
 步骤2:

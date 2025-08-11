@@ -38,9 +38,13 @@ acl_debug.log	详细的过程调试信息（目录扫描、SID替换、JSON生�
 -
 获得域用户和组的SID,
 根据输入文件，自动读取域组并将其转换为安全标识符（SID）。
+
 1、创建输入文件sid_mapping.csv
+
    文件格式（sid_mapping.csv）
+
 Olduser,OldSID,Newuser,NewSID
+
 domain\user1,,domain\user2,
 
 2、SIDMapper_GUI.ps1

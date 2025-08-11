@@ -58,9 +58,7 @@ Newuser：仅查询新用户 SID 并填入 NewSID
 all：同时查询两列并填入对应 SID
 
 步骤2:
--
-将group_with_sid.csv需要替换的新旧用户或组SID信息填写sid_mapping.csv中。
-自动读取新旧SID将目标目录权限信息进行替换，并输出报告。
+根据sid_mapping.csv查询新旧SID对照表后，运行脚本自动读取新旧SID将目标目录权限信息进行替换，并输出报告。
 
 1、replace_sid_v6.6.ps1脚本已分为以下几个模块：
 

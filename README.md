@@ -36,19 +36,19 @@ acl_debug.log	详细的过程调试信息（目录扫描、SID替换、JSON生�
 
 步骤1：
 -
-获得域用户和组的SID,ConvertTo-SID-PowerShell.
+获得域用户和组的SID,
+根据输入文件，自动读取域组并将其转换为安全标识符（SID）。
+1、创建输入文件sid_mapping.csv
+   文件格式（sid_mapping.csv）
+Olduser,OldSID,Newuser,NewSID
+domain\user1,,domain\user2,
 
-自动读取域组并将其转换为安全标识符（SID）。
-
-1、ConvertTo-SID.ps1
-读取 CSV 文件中的 Domain / Group 数据
-
-2、group.csv
-利用 System.Security.Principal.NTAccount 转换为 SID
-
-3、group_with_sid.csv
-输出为格式化的 CSV 文件，支持中文字符
-
+2、SIDMapper_GUI.ps1
+它一个基于 PowerShell 的图形界面工具，用于批量查询域用户或组的 SID，并将结果自动填入原始 CSV 表格中。
+查询模式选择：支持三种模式
+Olduser：仅查询旧用户 SID 并填入 OldSID
+Newuser：仅查询新用户 SID 并填入 NewSID
+all：同时查询两列并填入对应 SID
 
 步骤2:
 -
